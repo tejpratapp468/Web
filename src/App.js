@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MainRouter from "./MainRouter.js";
+import { BrowserRouter } from "react-router-dom";
+import Slide1 from './images/Slide1.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+  <BrowserRouter>
+      <MainRouter />
+  </BrowserRouter>
+);
+
+// const App = () => (
+//   <ParallaxProvider>
+//       <MainRouter />
+//   </ParallaxProvider>
+// );
+
+// function App() {
+//   return (
+//     <div className="App">
+//         <img src={Slide1} className="App-logo" alt="logo" />
+//     </div>
+//   );
+// }
 
 export default App;
